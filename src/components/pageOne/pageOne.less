@@ -1,0 +1,49 @@
+.page-one{
+  height: 100%;
+  .swiper-container{
+    height: 100%;
+    .swiper-wrapper{
+      height: 100%;
+      .inner-slide{
+        height: 100%;
+      }
+    }
+  }
+
+  .swiper-pagination{
+    width: 100px !important;
+    height: 160px;
+    position: absolute;
+    left: 20px;
+    top: 65%;
+    z-index: 100;
+    text-align: left;
+    .swiper-pagination-bullet{
+      border-radius: 0;
+      width: 50px;
+      height: 4px;
+      background: #a7a8ad;
+      margin-bottom: 30px !important;
+      transition: width .5s;
+      -moz-transition: width .5s;	/* Firefox 4 */
+      -webkit-transition: width .5s;	/* Safari 和 Chrome */
+      -o-transition: width .5s;
+    }
+    .swiper-pagination-bullet-active{
+      width: 100px;
+      background: #fff;
+    }
+  }
+  .swiper-button-prev{
+    width: 120px;
+    height: 90px;
+    background: url("../../../static/img/pre.png") no-repeat;
+    background-size: 100% 100%;
+  }
+  .swiper-button-next{
+    width: 120px;
+    height: 90px;
+    background: url("../../../static/img/next.png") no-repeat;
+    background-size: 100% 100%;
+  }
+}

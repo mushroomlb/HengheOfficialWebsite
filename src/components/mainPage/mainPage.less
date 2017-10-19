@@ -1,0 +1,107 @@
+@media screen and (min-width: 1120px) {
+  .mainPage{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1120px) {
+  .mainPage{
+    width: 1120px;
+  }
+}
+.mainPage{
+  z-index: 1;
+  position: absolute;
+  top: 77px;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  .outer-pagination{
+    .swiper-pagination-bullet{
+      width: 20px;
+      height: 20px;
+      background: #7a7a7a;
+      margin-bottom: 30px !important;
+      position: relative;
+      cursor: pointer;
+    }
+    .swiper-pagination-bullet::after{
+      content: 'o';
+      font-size: 0;
+      position: absolute;
+      left: 6px;
+      top: 6px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #ffffff;
+    }
+    .swiper-pagination-bullet::before{
+      content: 'o';
+      font-size: 0;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 0;
+      height: 45px;
+      border-left: solid 1px #ed9b21;
+    }
+    .swiper-pagination-bullet:last-child::before{
+      opacity: 0;
+    }
+    .swiper-pagination-bullet-active{
+      background: #ed9b21;
+    }
+    .item{
+      height: 60px;
+      position: relative;
+      float: left;
+      .outer{
+        width: 20px;
+        height: 20px;
+        background: rgba(0,0,0,.4);
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        position: relative;
+        cursor: pointer;
+        .inner{
+          width: 8px;
+          height: 8px;
+          background: #fff;
+          border-radius: 50%;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          -ms-border-radius: 50%;
+          -o-border-radius: 50%;
+          position: absolute;
+          left: 6px;
+          top: 6px;
+        }
+      }
+      .line{
+        height: 55px;
+        border-left: 1px solid #ccc;
+        position: absolute;
+        top: 14px;
+        left: 10px;
+      }
+    }
+    .active{
+      .outer{
+        background: #ed9b21;
+      }
+      .line{
+        border-color: #ed9b21;
+      }
+    }
+  }
+  .outer-swiper{
+    height: 100%;
+    .slide{
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
